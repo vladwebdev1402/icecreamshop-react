@@ -1,0 +1,12 @@
+.btn {
+    background: var(--btn-orange);
+    border-radius: 70px;
+    padding: 16px 23px;
+}
+
+.btn__text {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+}
