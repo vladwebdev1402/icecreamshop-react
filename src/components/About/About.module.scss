@@ -1,0 +1,28 @@
+.about {
+    margin-top: 40px;
+    background-image: url(../../assets/pattern.png);
+    padding: 25px 20px 20px 20px;
+    color: var(--dark);
+    border-radius: 16px;
+}
+
+.about__head {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.about__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 25px;
+    margin-top: 10px;
+}
+
+.about__item {
+    display: flex;
+    align-items: flex-start;
+}
+.about__item__desc {
+    padding-top: 14px;
+    margin-left: 6px;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import BoundingContainer from "../ui/BoundingContainer/BoundingContainer";
+import BoundingContainer from "../ui/container/BoundingContainer/BoundingContainer";
 import st from "./Banners.module.scss";
 import ButtonOrange from "../ui/button/ButtonOrange/ButtonOrange";
 import chocolate from "../../assets/chocolate.png";

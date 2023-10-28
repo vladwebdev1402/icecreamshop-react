@@ -26,7 +26,7 @@
 
 :root {
   --white: rgba(255, 255, 255, 1);
-  --white-transparent: rgba(182, 168, 162, 1);
+  --white-transparent: rgba(255, 255, 255, 0.2);
   --brown: rgba(157, 139, 132, 1);
   --brown-light: rgba(181, 167, 161, 1);
   --btn-orange: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
@@ -43,8 +43,9 @@ button {
 }
 
 body {
+  transition: .2s;
   font-family: "Roboto";
-  background-color: var(--brown);
+  background-color: var(--blue);
 }
 
 ul {

@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import BoundingContainer from "../ui/BoundingContainer/BoundingContainer";
+import BoundingContainer from "../ui/container/BoundingContainer/BoundingContainer";
 import st from "./Hero.module.scss";
 import HeroContent from "./HeroContent";
 const Hero: FC = () => {

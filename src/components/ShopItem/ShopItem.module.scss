@@ -1,0 +1,48 @@
+.item {
+    max-width: 267px;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.item__head {
+    position: relative;
+}
+.item__img {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.item__hot {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.item__price {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+}
+.item__weight {
+    font-size: 30px;
+}
+.item__description {
+    text-align: center;
+    margin-top: 13px;
+    font-weight: 500;
+    flex-grow: 1;
+}
+
+
+
+
+
+
+
+
+

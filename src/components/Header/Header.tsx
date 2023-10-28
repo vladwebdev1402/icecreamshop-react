@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import st from "./Header.module.scss";
-import BoundingContainer from "../ui/BoundingContainer/BoundingContainer";
+import BoundingContainer from "../ui/container/BoundingContainer/BoundingContainer";
 import logo from "../../assets/logo.svg";
 import basket from "../../assets/header/basket.svg";
 import login from "../../assets/header/log_in.svg";
