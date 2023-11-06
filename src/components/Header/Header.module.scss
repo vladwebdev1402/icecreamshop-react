@@ -81,3 +81,11 @@
 .input__search {
     width: 341px;
 }
+
+.link {
+    padding: 10px 15px;
+}
+
+.link__active {
+    background-color: var(--orange);
+}

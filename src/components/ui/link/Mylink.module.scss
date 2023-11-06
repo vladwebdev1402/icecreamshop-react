@@ -1,8 +1,6 @@
 .link {
-    padding: 10px 15px;
-    
-
-    &:hover  {
+    transition: .3s;
+      &:hover  {
         .link__text {
             &::after {
                 background-color: var(--white);
@@ -13,9 +11,9 @@
 
 .link__text {
     color: var(--white);
-    font-weight: bold;
     position: relative;
     font-size: 16px;
+    transition: .3s;
 
     &::after {
         content: "";

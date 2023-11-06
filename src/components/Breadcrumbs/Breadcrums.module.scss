@@ -1,0 +1,16 @@
+.breadcrumbs {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.breadcrumbs__arrow {
+    width: 6px;
+    height: 6px;
+}
+
+.link__active {
+    span::after {
+        display: none !important;
+    }
+}

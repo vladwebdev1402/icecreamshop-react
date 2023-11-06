@@ -4,8 +4,6 @@ import st from "./Header.module.scss";
 import BoundingContainer from "../ui/container/BoundingContainer/BoundingContainer";
 import logo from "../../assets/logo.svg";
 import basket from "../../assets/header/basket.svg";
-import login from "../../assets/header/log_in.svg";
-import search from "../../assets/header/search.svg";
 import ButtonWhite from "../ui/button/ButtonWhite/ButtonWhite";
 import DropdownLink from "./DropdownLink/DropdownLink";
 import MyLink from "../ui/link/MyLink";
@@ -28,10 +26,20 @@ const Header: FC = () => {
                 <DropdownLink />
               </li>
               <li className={st.nav__item}>
-                <MyLink to={"#"} text="Доставка и оплата" />
+                <MyLink
+                  className={st.link}
+                  st__active__link={st.link__active}
+                  to={"#"}
+                  text="Доставка и оплата"
+                />
               </li>
               <li className={st.nav__item}>
-                <MyLink to={"#"} text="О компании" />
+                <MyLink
+                  className={st.link}
+                  st__active__link={st.link__active}
+                  to={"#"}
+                  text="О компании"
+                />
               </li>
             </ul>
           </nav>
