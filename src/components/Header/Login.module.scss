@@ -1,0 +1,25 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login__option {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.login__link {
+    white-space: nowrap;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.login__item {
+    margin-top: 9px;
+
+    &:first-child {
+        margin-top: 0px;
+    }
+}

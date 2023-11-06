@@ -1,0 +1,17 @@
+.block__child {
+    padding: 20px;
+    background-color: var(--gray);
+    border-radius: 4px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.block {
+    position: relative;
+}
+
+.block__child {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    z-index: 5;
+}

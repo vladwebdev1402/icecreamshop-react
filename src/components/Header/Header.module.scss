@@ -31,21 +31,6 @@
     }
 }
 
-.nav__link {
-    color: var(--white);
-    font-weight: bold;
-    position: relative;
-
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -3px;
-        height: 1px;
-        width: 100%;
-        background-color: var(--brown-light);
-    }
-}
 
 .options {
     display: flex;
@@ -59,7 +44,7 @@
     align-items: center;
 }
 
-.btn_seacrh {
+.btn_search {
     border-radius: 50% !important;
     padding: 8px !important;
     width: 32px;
@@ -76,4 +61,23 @@
     color: var(--white);
     font-weight: bold;
     font-size: 22px;
+}
+
+.btn_search_active {
+    background-color: var(--white) !important;
+    svg path {
+        fill: var(--dark);
+    }
+}
+
+.btn_login_active {
+    background-color: var(--white) !important;
+    svg path {
+        fill: var(--dark);
+    }
+    color: var(--dark) !important;
+}
+
+.input__search {
+    width: 341px;
 }

@@ -18,6 +18,7 @@
     border: 2px solid var(--white);
     border-radius: 50%;
     cursor: pointer;
+    transition: .3s;
 }
 
 .themeSwitch__item_active {
@@ -31,7 +32,7 @@
     justify-content: flex-end;
     height: 600px;
     max-width: 716px;
-    padding: 0px 34px 42px 34px;
+    padding: 0px 0xp 42px 0xp;
     img {
         position: absolute;
         top: 0;
@@ -74,4 +75,14 @@
         letter-spacing: 5%;
     }
     
+}
+
+.icecream1 {
+    background-color: var(--green);
+}
+.icecream2 {
+    background-color: var(--blue);
+}
+.icecream3 {
+    background-color: var(--brown);
 }

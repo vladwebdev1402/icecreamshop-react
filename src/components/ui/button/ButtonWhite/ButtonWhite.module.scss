@@ -5,4 +5,8 @@
     font-size: 14px;
     color: var(--white);
     font-weight: 500;
+    transition: .3s;
+    svg {
+        transition: .3s;
+    }
 }

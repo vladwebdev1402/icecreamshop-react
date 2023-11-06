@@ -1,0 +1,30 @@
+.link {
+    padding: 10px 15px;
+    
+
+    &:hover  {
+        .link__text {
+            &::after {
+                background-color: var(--white);
+            }
+        }
+    }
+}
+
+.link__text {
+    color: var(--white);
+    font-weight: bold;
+    position: relative;
+    font-size: 16px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        transition: .3s;
+        height: 1px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.5);    
+    }
+}
