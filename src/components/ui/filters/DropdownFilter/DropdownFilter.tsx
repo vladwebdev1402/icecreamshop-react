@@ -1,13 +1,8 @@
 import React, { FC, useState } from "react";
 import st from "./DropdownFilters.module.scss";
+import { IFiltersProps } from "../../../../types/IFiltersProps";
 
-interface Props extends React.HTMLAttributes<HTMLDivElement> {
-  filters: { name: string; value: string }[];
-  currentValue: string;
-  setValue(value: string): void;
-}
-
-const DropdownFilter: FC<Props> = ({
+const DropdownFilter: FC<IFiltersProps> = ({
   filters,
   currentValue,
   setValue,

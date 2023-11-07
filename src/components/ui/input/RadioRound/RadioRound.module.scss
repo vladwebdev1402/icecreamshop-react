@@ -1,0 +1,35 @@
+.radio {
+    position: relative;
+    padding-left: 33px;
+    color: var(--white);
+    font-weight: 500;
+    cursor: pointer;
+    span {
+        position: absolute;
+        border: 3px solid var(--white);
+        width: 22px;
+        height: 22px;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+    }
+
+    input {
+        display: none;
+    }
+    input:checked + span {
+        &::after {
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            background-color: var(--white);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+        
+
+    }
+}
