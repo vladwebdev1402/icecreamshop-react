@@ -2,16 +2,9 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import arrow from "../../assets/breadcrumbs/arrow.svg";
 import BoundingContainer from "../ui/container/BoundingContainer/BoundingContainer";
-import { routes } from "../Router/routes";
+import { routes, translateRoutes } from "../Router/routes";
 import MyLink from "../ui/link/MyLink";
 import st from "./Breadcrums.module.scss";
-const translateRoutes: { [index: string]: string } = {
-  catalog: "Каталог",
-  sherbet: "Щербет",
-  creamy: "Сливочное морожение",
-  ice: "Фруктовый лёд",
-  melorin: "Мелорин",
-};
 
 const Breadcrumbs = () => {
   const location = useLocation().pathname.split("/").slice(1);

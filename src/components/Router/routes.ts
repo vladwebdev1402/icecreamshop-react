@@ -8,3 +8,11 @@ export  const routes = {
     ice: root + "/catalog/ice",
     melorin: root + "/catalog/melorin",
 } 
+
+export const translateRoutes: { [index: string]: string } = {
+    catalog: "Каталог",
+    sherbet: "Щербет",
+    creamy: "Сливочное морожение",
+    ice: "Фруктовый лёд",
+    melorin: "Мелорин",
+  };

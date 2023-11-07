@@ -1,0 +1,13 @@
+.filter {}
+.filter__head {
+    margin-left: 10px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+}
+.filter__body {
+    margin-top: 7px;
+    padding: 7px 14px;
+    border-radius: 20px;
+    background-color: var(--white-transparent);
+}
