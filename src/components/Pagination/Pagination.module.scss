@@ -1,0 +1,41 @@
+.pagination {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    margin: 80px auto 30px auto;
+}
+
+.btn {
+    width: 7px;
+    height: 26px;
+    background-image: url(../../assets/pagination/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn_left {
+    rotate: 180deg;
+}
+
+.btn_disabled {
+    opacity: 0.2;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+}
+
+.page__number {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+
+.page__number_active {
+    background-color: var(--white);
+    color: var(--dark);
+}

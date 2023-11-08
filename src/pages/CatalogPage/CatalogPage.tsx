@@ -6,6 +6,7 @@ import BoundingContainer from "../../components/ui/container/BoundingContainer/B
 import st from "./CatalogPage.module.scss";
 import IcecreamList from "../../components/IcecreamList/IcecreamList";
 import IcecreamFilters from "../../components/IcecreamFilters/IcecreamFilters";
+import Pagination from "../../components/Pagination/Pagination";
 const CatalogPage = () => {
   const url = useLocation().pathname.split("/").at(-1);
 
@@ -18,6 +19,7 @@ const CatalogPage = () => {
       </BoundingContainer>
       <IcecreamFilters />
       <IcecreamList />
+      <Pagination />
     </>
   );
 };

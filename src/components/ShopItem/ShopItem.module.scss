@@ -1,5 +1,5 @@
 .item {
-    max-width: 267px;
+    width: 267px;
     color: var(--white);
     cursor: pointer;
     display: flex;
@@ -11,8 +11,12 @@
 }
 .item__img {
     width: 100%;
+    height: 267px;
     border-radius: 50%;
-    max-width: 100%;
+
+    img {
+        max-width: 100%;
+    }
 }
 
 .item__hot {

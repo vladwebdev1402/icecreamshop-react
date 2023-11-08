@@ -11,7 +11,9 @@ const ShopItem: FC<Props> = ({ item }) => {
   return (
     <div className={st.item}>
       <div className={st.item__head}>
-        <img className={st.item__img} src={item.img} alt="" />
+        <div className={st.item__img}>
+          <img src={item.img} alt="" />
+        </div>
         {item.isHot ? (
           <img className={st.item__hot} src={hot} alt="" draggable={false} />
         ) : (
