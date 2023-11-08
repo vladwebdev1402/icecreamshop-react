@@ -31,17 +31,17 @@ const DropdownFilter: FC<IFiltersProps> = ({
       </div>
       {open && (
         <div className={st.filter__body}>
-          {filters
-            .filter((filter) => filter.value !== currentValue)
-            .map((filter, idx) => (
-              <div
-                key={idx}
-                className={st.filter__item}
-                onClick={() => clickFilter(filter.value)}
-              >
-                {filter.name}
-              </div>
-            ))}
+          {filters.map((filter, idx) => (
+            <div
+              key={idx}
+              className={`${st.filter__item} ${
+                filter.value == currentValue ? st.filter__item_active : ""
+              }`}
+              onClick={() => clickFilter(filter.value)}
+            >
+              {filter.name}
+            </div>
+          ))}
         </div>
       )}
     </div>
