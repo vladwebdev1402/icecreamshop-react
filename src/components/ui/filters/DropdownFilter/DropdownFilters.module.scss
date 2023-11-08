@@ -1,6 +1,8 @@
 .filter {
     position: relative;
     user-select: none;
+    white-space: nowrap;
+    width: 165px;
 }
 .filter__current {
     position: relative;

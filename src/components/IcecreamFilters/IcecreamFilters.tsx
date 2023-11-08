@@ -5,14 +5,14 @@ import FilterContainer from "../ui/filters/filterContaner/FilterContainer";
 import Sorted from "./Sorted/Sorted";
 import RadioRound from "../ui/input/RadioRound/RadioRound";
 import FatContent from "./Fatcontent/FatContent";
+import Fillres from "./Fillers/Fillres";
 
 const IcecreamFilters = () => {
   return (
     <BoundingContainer className={st.filters}>
-      <div className={st.up}>
-        <Sorted />
-        <FatContent />
-      </div>
+      <Sorted />
+      <FatContent />
+      <Fillres />
     </BoundingContainer>
   );
 };
