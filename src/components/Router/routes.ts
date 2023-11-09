@@ -1,4 +1,4 @@
-const root = "root"
+const root = "icecreamshop-react"
 
 export  const routes = {
     root: root,
