@@ -1,0 +1,45 @@
+.range {
+    width: 176px;
+    height: 19px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.range__innerLine {
+    position: relative;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(248, 247, 244, 0.5);
+    border-radius: 2px;
+}
+
+.range__control {
+    position: absolute;
+    z-index: 3;
+    width: 20px;
+    height: 20px;
+    top: -9px;
+    background-color: var(--white);
+    border-radius: 50%;
+    cursor: grab;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        top: calc(50% - 2px);
+        left: calc(50% - 2px);
+        background-color: rgba(171, 171, 171, 1);
+        border-radius: 50%;
+        pointer-events: none;
+    }
+}
+
+.outher__line {
+    height: 100%;
+    background-color: var(--white);
+    border-radius: 2px;
+    position: absolute;
+    pointer-events: none;
+}

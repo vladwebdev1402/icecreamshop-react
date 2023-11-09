@@ -29,6 +29,9 @@ const Pagination = () => {
               className={`${st.page__number} ${
                 page === currentPage ? st.page__number_active : ""
               }`}
+              onClick={() => {
+                setCurrentPage(page);
+              }}
             >
               {page}
             </button>

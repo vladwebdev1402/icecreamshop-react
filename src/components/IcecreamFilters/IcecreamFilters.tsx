@@ -6,12 +6,14 @@ import Sorted from "./Sorted/Sorted";
 import RadioRound from "../ui/input/RadioRound/RadioRound";
 import FatContent from "./Fatcontent/FatContent";
 import Fillres from "./Fillers/Fillres";
+import Price from "./Price/Price";
 
 const IcecreamFilters = () => {
   return (
     <BoundingContainer className={st.filters}>
       <Sorted />
       <FatContent />
+      <Price />
       <Fillres />
     </BoundingContainer>
   );
