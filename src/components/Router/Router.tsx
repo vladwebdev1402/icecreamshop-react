@@ -14,7 +14,7 @@ const Router = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path={routes.main} element={<Root />}>
-        <Route path={routes.main} element={<MainPage />} />
+        <Route index element={<MainPage />} />
         <Route path={routes.catalog} element={<CatalogPage />} />
       </Route>
     )

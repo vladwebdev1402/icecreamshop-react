@@ -1,12 +1,13 @@
-const root = ""
+const root = "root"
 
 export  const routes = {
+    root: root,
     main: root + "/",
-    catalog: root + "/catalog/:id",
-    creamy: root + "/catalog/creamy",
-    sherbet: root + "/catalog/sherbet",
-    ice: root + "/catalog/ice",
-    melorin: root + "/catalog/melorin",
+    catalog: "catalog/:id",
+    creamy: "catalog/creamy",
+    sherbet: "catalog/sherbet",
+    ice:  "catalog/ice",
+    melorin:  "catalog/melorin",
 } 
 
 export const translateRoutes: { [index: string]: string } = {

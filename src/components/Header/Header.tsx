@@ -18,7 +18,7 @@ const Header: FC = () => {
           <nav>
             <ul className={st.nav}>
               <li className={st.nav__item}>
-                <Link to={routes.main}>
+                <Link to={`/${routes.main}`}>
                   <img src={logo} alt="logo" />
                 </Link>
               </li>

@@ -7,11 +7,11 @@ import MyLink from "../ui/link/MyLink";
 import st from "./Breadcrums.module.scss";
 
 const Breadcrumbs = () => {
-  const location = useLocation().pathname.split("/").slice(1);
-  let url = "";
+  const location = useLocation().pathname.split("/").slice(2);
+  let url = `/${routes.root}`;
   return (
     <BoundingContainer className={st.breadcrumbs}>
-      <MyLink to={routes.main} text={"Главная"} />
+      <MyLink to={`/${routes.main}`} text={"Главная"} />
       {location.map((link) => {
         url += "/" + link;
         return (
