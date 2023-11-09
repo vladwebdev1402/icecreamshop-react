@@ -1,6 +1,7 @@
-import React, { FC, useState } from "react";
+import React, { FC, useState, useRef } from "react";
 import st from "./HiddenBlock.module.scss";
 import ButtonWhite from "../button/ButtonWhite/ButtonWhite";
+import { useClose } from "../../../hooks/useClose";
 interface Props {
   st__head__active: string;
   st__btn?: string;
@@ -13,18 +14,19 @@ const HiddenBlock: FC<Props> = ({
   blockChild,
   st__btn = "",
 }) => {
-  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const { isVisible, setIsVisible } = useClose(ref);
   return (
-    <div className={st.block}>
+    <div className={st.block} ref={ref}>
       <ButtonWhite
         onClick={() => {
-          setOpen(!open);
+          setIsVisible(!isVisible);
         }}
-        className={`${open ? st__head__active : ""} ${st__btn}`}
+        className={`${isVisible ? st__head__active : ""} ${st__btn}`}
       >
         {headChild}
       </ButtonWhite>
-      {open && <div className={st.block__child}>{blockChild}</div>}
+      {isVisible && <div className={st.block__child}>{blockChild}</div>}
     </div>
   );
 };

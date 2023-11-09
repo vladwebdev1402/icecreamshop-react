@@ -1,6 +1,7 @@
-import React, { FC, useState } from "react";
+import React, { FC, useState, useRef } from "react";
 import st from "./DropdownFilters.module.scss";
 import { IFiltersProps } from "../../../../types/IFiltersProps";
+import { useClose } from "../../../../hooks/useClose";
 
 const DropdownFilter: FC<IFiltersProps> = ({
   filters,
@@ -9,27 +10,28 @@ const DropdownFilter: FC<IFiltersProps> = ({
   className = "",
   ...props
 }) => {
-  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const { isVisible, setIsVisible } = useClose(ref);
   const clickOpen = () => {
-    setOpen(!open);
+    setIsVisible(!isVisible);
   };
 
   const clickFilter = (value: string) => {
-    setOpen(!open);
+    setIsVisible(!isVisible);
     setValue(value);
   };
 
   return (
-    <div className={`${st.filter} ${className}`} {...props}>
+    <div className={`${st.filter} ${className}`} {...props} ref={ref}>
       <div
         className={`${st.filter__current} ${
-          open ? st.filter__current_open : ""
+          isVisible ? st.filter__current_open : ""
         }`}
         onClick={clickOpen}
       >
         {filters.filter((filter) => filter.value === currentValue)[0].name}
       </div>
-      {open && (
+      {isVisible && (
         <div className={st.filter__body}>
           {filters.map((filter, idx) => (
             <div
