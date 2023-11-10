@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/icecreamshop-react/static/css/main.57d606c2.css",
-    "main.js": "/icecreamshop-react/static/js/main.c0455600.js",
+    "main.css": "/icecreamshop-react/static/css/main.e7f15cd0.css",
+    "main.js": "/icecreamshop-react/static/js/main.1c1f1a66.js",
     "static/media/icecream1.png": "/icecreamshop-react/static/media/icecream1.64ac9a94ed63506b8db8.png",
     "static/media/pattern.png": "/icecreamshop-react/static/media/pattern.dffe64939cbd88b61765.png",
     "static/media/icecream2.png": "/icecreamshop-react/static/media/icecream2.f12c211ad1b1d8b22411.png",
@@ -36,14 +36,15 @@
     "static/media/arrow.svg": "/icecreamshop-react/static/media/arrow.f576e6e4b39129955bf7703f2086d483.svg",
     "static/media/square-checked.svg": "/icecreamshop-react/static/media/square-checked.23d126dc47c23900bfa0.svg",
     "static/media/facebook.svg": "/icecreamshop-react/static/media/facebook.4f914d2d17339070cf8ada6c981dd7bb.svg",
+    "static/media/basket_active.svg": "/icecreamshop-react/static/media/basket_active.565cfdece7f93096df08164d5eb32a0d.svg",
     "static/media/basket.svg": "/icecreamshop-react/static/media/basket.59892bf7aba2306a8e2167aea3428a6b.svg",
     "static/media/heart.svg": "/icecreamshop-react/static/media/heart.498e35e7f2772218f5e881f007aec251.svg",
     "index.html": "/icecreamshop-react/index.html",
-    "main.57d606c2.css.map": "/icecreamshop-react/static/css/main.57d606c2.css.map",
-    "main.c0455600.js.map": "/icecreamshop-react/static/js/main.c0455600.js.map"
+    "main.e7f15cd0.css.map": "/icecreamshop-react/static/css/main.e7f15cd0.css.map",
+    "main.1c1f1a66.js.map": "/icecreamshop-react/static/js/main.1c1f1a66.js.map"
   },
   "entrypoints": [
-    "static/css/main.57d606c2.css",
-    "static/js/main.c0455600.js"
+    "static/css/main.e7f15cd0.css",
+    "static/js/main.1c1f1a66.js"
   ]
 }
