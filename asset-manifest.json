@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/icecreamshop-react/static/css/main.e7f15cd0.css",
-    "main.js": "/icecreamshop-react/static/js/main.1c1f1a66.js",
+    "main.css": "/icecreamshop-react/static/css/main.fd1b8281.css",
+    "main.js": "/icecreamshop-react/static/js/main.a0fc9641.js",
     "static/media/icecream1.png": "/icecreamshop-react/static/media/icecream1.64ac9a94ed63506b8db8.png",
     "static/media/pattern.png": "/icecreamshop-react/static/media/pattern.dffe64939cbd88b61765.png",
     "static/media/icecream2.png": "/icecreamshop-react/static/media/icecream2.f12c211ad1b1d8b22411.png",
@@ -40,11 +40,11 @@
     "static/media/basket.svg": "/icecreamshop-react/static/media/basket.59892bf7aba2306a8e2167aea3428a6b.svg",
     "static/media/heart.svg": "/icecreamshop-react/static/media/heart.498e35e7f2772218f5e881f007aec251.svg",
     "index.html": "/icecreamshop-react/index.html",
-    "main.e7f15cd0.css.map": "/icecreamshop-react/static/css/main.e7f15cd0.css.map",
-    "main.1c1f1a66.js.map": "/icecreamshop-react/static/js/main.1c1f1a66.js.map"
+    "main.fd1b8281.css.map": "/icecreamshop-react/static/css/main.fd1b8281.css.map",
+    "main.a0fc9641.js.map": "/icecreamshop-react/static/js/main.a0fc9641.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7f15cd0.css",
-    "static/js/main.1c1f1a66.js"
+    "static/css/main.fd1b8281.css",
+    "static/js/main.a0fc9641.js"
   ]
 }
