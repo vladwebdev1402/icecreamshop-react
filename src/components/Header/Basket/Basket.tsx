@@ -3,8 +3,8 @@ import HiddenBlock from "../../ui/HiddenBlock/HiddenBlock";
 import basket from "../../../assets/header/basket.svg";
 import basket_active from "../../../assets/header/basket_active.svg";
 import st from "./Basket.module.scss";
-import BasketItem from "./BasketItem/BasketItem";
 import { IBasketItem } from "../../../types/IBasketItem";
+import BasketBody from "./BasketBody/BasketBody";
 
 const basketItems: IBasketItem[] = [
   {
@@ -39,9 +39,11 @@ const Basket = () => {
       }
       blockChild={
         <>
-          {basketItems.map((item) => (
-            <BasketItem key={item.id} item={item} />
-          ))}
+          {basketItems.length > 0 ? (
+            <BasketBody basketItems={basketItems} />
+          ) : (
+            <span>Корзина пустая :(</span>
+          )}
         </>
       }
     />

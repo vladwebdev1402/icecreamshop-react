@@ -1,0 +1,16 @@
+.basket__divider {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(202, 202, 199, 1);
+    margin: 20px 0px;
+}
+
+.basket__options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--dark);
+}
