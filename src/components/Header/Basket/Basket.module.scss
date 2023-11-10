@@ -1,0 +1,43 @@
+.btn {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.basket__img {
+    width: 21px;
+    height: 20px;
+}
+
+.img_active {
+    display: none;
+}
+
+.basket__items__txt {
+    display: none;
+}
+
+
+.basket__active {
+    background-color: var(--white);
+    color: var(--dark);
+    .img_notActive {
+        display: none;
+    }
+    .img_active {
+        display: block;
+    }
+}
+
+.basket_with_items {
+    button {
+        @extend .basket__active;
+    } 
+    .basket__txt {
+        display: none;
+    }
+
+    .basket__items__txt {
+        display: inline;
+    }
+}

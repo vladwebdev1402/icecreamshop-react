@@ -10,6 +10,7 @@ import MyLink from "../ui/link/MyLink";
 import { routes } from "../Router/routes";
 import Search from "./Search";
 import Login from "./Login";
+import Basket from "./Basket/Basket";
 const Header: FC = () => {
   return (
     <header className={st.header}>
@@ -46,10 +47,7 @@ const Header: FC = () => {
           <div className={st.options}>
             <Search />
             <Login />
-            <ButtonWhite className={st.btn}>
-              <img src={basket} alt="basket" />
-              <span>Корзина</span>
-            </ButtonWhite>
+            <Basket />
           </div>
         </div>
         <div className={st.header__down}>
