@@ -1,11 +1,13 @@
-import React, { FC } from "react";
-import BoundingContainer from "../ui/container/BoundingContainer/BoundingContainer";
-import st from "./About.module.scss";
-import leaf from "../../assets/about/leaf.svg";
-import cow from "../../assets/about/cow.svg";
-import thermometer from "../../assets/about/thermometer.svg";
-import icecream from "../../assets/about/icecream.svg";
-const About: FC = () => {
+import BoundingContainer from '../ui/container/BoundingContainer/BoundingContainer';
+
+import leaf from '../../assets/about/leaf.svg';
+import cow from '../../assets/about/cow.svg';
+import thermometer from '../../assets/about/thermometer.svg';
+import icecream from '../../assets/about/icecream.svg';
+
+import st from './About.module.scss';
+
+const About = () => {
   return (
     <BoundingContainer>
       <div className={st.about}>

@@ -12,6 +12,7 @@
   left: 50%;
   transform: translateX(-50%);
   top: -83px;
+  z-index: -1;
 }
 
 .themeSwitch {
@@ -80,7 +81,7 @@
   display: flex !important;
   justify-content: center;  
   cursor: grab;
-  
+
   img {
     max-width: 647px;
     width: 100%;

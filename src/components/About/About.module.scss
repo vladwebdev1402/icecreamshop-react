@@ -22,7 +22,20 @@
     display: flex;
     align-items: flex-start;
 }
+
 .about__item__desc {
     padding-top: 14px;
     margin-left: 6px;
+}
+
+@media (max-width: 700px) {
+    .about__list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 568px) {
+    .about__head {
+        font-size: 20px;
+    }
 }

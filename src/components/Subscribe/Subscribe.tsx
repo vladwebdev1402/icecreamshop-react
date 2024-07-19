@@ -1,12 +1,14 @@
-import React, { useState } from "react";
-import st from "./Subscribe.module.scss";
-import BoundingContainer from "../ui/container/BoundingContainer/BoundingContainer";
-import strawbarry from "../../assets/strawberry_bg.png";
-import mail from "../../assets/mail_bg.png";
-import ButtonOrange from "../ui/button/ButtonOrange/ButtonOrange";
-import Input from "../ui/input/Input/Input";
+import React, {FormEvent, useState} from 'react';
+import BoundingContainer from '../ui/container/BoundingContainer/BoundingContainer';
+import strawbarry from '../../assets/strawberry_bg.png';
+import mail from '../../assets/mail_bg.png';
+import ButtonOrange from '../ui/button/ButtonOrange/ButtonOrange';
+import Input from '../ui/input/Input/Input';
+
+import st from './Subscribe.module.scss';
+
 const Subscribe = () => {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState('');
   const changeEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
   };
@@ -27,15 +29,20 @@ const Subscribe = () => {
             самого вкусного, что у нас происходит. Обещаем не спамить и не слать
             всякой ненужной ерунды. Честно =)
           </div>
-          <div className={st.subscribe__sub__options}>
+          <form
+            className={st.subscribe__sub__options}
+            onSubmit={(e: FormEvent<HTMLFormElement>) => e.preventDefault()}
+          >
             <Input
               value={email}
               onChange={changeEmail}
               placeholder="email@example.com"
               className={st.subscribe__sub__input}
+              required
+              type="email"
             />
-            <ButtonOrange>Отправить</ButtonOrange>
-          </div>
+            <ButtonOrange className={st.subcribe__btn}>Отправить</ButtonOrange>
+          </form>
         </div>
       </div>
     </BoundingContainer>
