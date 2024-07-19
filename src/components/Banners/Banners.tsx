@@ -1,8 +1,8 @@
 import BoundingContainer from '../ui/container/BoundingContainer/BoundingContainer';
 import st from './Banners.module.scss';
 import ButtonOrange from '../ui/button/ButtonOrange/ButtonOrange';
-import chocolate from '../../assets/chocolate.png';
-import raspberries from '../../assets/raspberries.png';
+import chocolate from '../../assets/chocolate.webp';
+import raspberries from '../../assets/raspberries.webp';
 
 const Banners = () => {
   return (

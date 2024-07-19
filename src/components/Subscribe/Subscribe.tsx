@@ -1,7 +1,7 @@
 import React, {FormEvent, useState} from 'react';
 import BoundingContainer from '../ui/container/BoundingContainer/BoundingContainer';
-import strawbarry from '../../assets/strawberry_bg.png';
-import mail from '../../assets/mail_bg.png';
+import strawbarry from '../../assets/strawberry_bg.webp';
+import mail from '../../assets/mail_bg.webp';
 import ButtonOrange from '../ui/button/ButtonOrange/ButtonOrange';
 import Input from '../ui/input/Input/Input';
 
