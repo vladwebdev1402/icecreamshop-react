@@ -1,6 +1,6 @@
-import img1 from '../../assets/hero/icecream1.png';
-import img2 from '../../assets/hero/icecream2.png';
-import img3 from '../../assets/hero/icecream3.png';
+import img1 from '../../assets/hero/icecream1.webp';
+import img2 from '../../assets/hero/icecream2.webp';
+import img3 from '../../assets/hero/icecream3.webp';
 
 export const icecreams = [
   {

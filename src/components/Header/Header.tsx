@@ -1,16 +1,17 @@
-import React, { FC } from "react";
-import { Link } from "react-router-dom";
-import st from "./Header.module.scss";
-import BoundingContainer from "../ui/container/BoundingContainer/BoundingContainer";
-import logo from "../../assets/logo.svg";
-import basket from "../../assets/header/basket.svg";
-import ButtonWhite from "../ui/button/ButtonWhite/ButtonWhite";
-import DropdownLink from "./DropdownLink/DropdownLink";
-import MyLink from "../ui/link/MyLink";
-import { routes } from "../Router/routes";
-import Search from "./Search";
-import Login from "./Login";
-import Basket from "./Basket/Basket";
+import {FC} from 'react';
+import {Link} from 'react-router-dom';
+
+import BoundingContainer from '../ui/container/BoundingContainer/BoundingContainer';
+import logo from '../../assets/logo.svg';
+import MyLink from '../ui/link/MyLink';
+import {routes} from '../Router/routes';
+
+import Search from './Search';
+import Login from './Login';
+import Basket from './Basket/Basket';
+import DropdownLink from './DropdownLink/DropdownLink';
+import st from './Header.module.scss';
+
 const Header: FC = () => {
   return (
     <header className={st.header}>
@@ -30,7 +31,7 @@ const Header: FC = () => {
                 <MyLink
                   className={st.link}
                   st__active__link={st.link__active}
-                  to={"#"}
+                  to={'#'}
                   text="Доставка и оплата"
                 />
               </li>
@@ -38,7 +39,7 @@ const Header: FC = () => {
                 <MyLink
                   className={st.link}
                   st__active__link={st.link__active}
-                  to={"#"}
+                  to={'#'}
                   text="О компании"
                 />
               </li>

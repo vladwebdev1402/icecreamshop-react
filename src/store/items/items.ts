@@ -1,17 +1,17 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { IShopItem } from '../../types/IShopItem';
-import img1 from "../../assets/items/1.png";
-import img2 from "../../assets/items/2.png";
-import img3 from "../../assets/items/3.png";
-import img4 from "../../assets/items/4.png";
-import img5 from "../../assets/items/5.png";
-import img6 from "../../assets/items/6.png";
-import img7 from "../../assets/items/7.png";
-import img8 from "../../assets/items/8.png";
-import img9 from "../../assets/items/9.png";
-import img10 from "../../assets/items/10.png";
-import img11 from "../../assets/items/11.png";
-import img12 from "../../assets/items/12.png";
+import img1 from "../../assets/items/1.webp";
+import img2 from "../../assets/items/2.webp";
+import img3 from "../../assets/items/3.webp";
+import img4 from "../../assets/items/4.webp";
+import img5 from "../../assets/items/5.webp";
+import img6 from "../../assets/items/6.webp";
+import img7 from "../../assets/items/7.webp";
+import img8 from "../../assets/items/8.webp";
+import img9 from "../../assets/items/9.webp";
+import img10 from "../../assets/items/10.webp";
+import img11 from "../../assets/items/11.webp";
+import img12 from "../../assets/items/12.webp";
 interface IItemsState {
     value: IShopItem[];
 }

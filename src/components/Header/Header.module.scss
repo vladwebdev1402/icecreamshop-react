@@ -84,8 +84,15 @@
 
 .link {
     padding: 10px 15px;
+    text-wrap: nowrap;
 }
 
 .link__active {
     background-color: var(--orange);
+}
+
+@media (max-width: 992px) {
+    .link {
+        padding: 0px;
+    }
 }
